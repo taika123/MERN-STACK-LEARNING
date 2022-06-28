@@ -19,18 +19,18 @@ Content-Type: application/json
 ###
 POST http://localhost:5000/api/posts
 Content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmIzZGZiMjFmOTljYzI3MzhlOGIxZmQiLCJpYXQiOjE2NTU5NTUzNzh9.3KNswnrtiWDRX4x8-IJ2v2cgqIYTJ3ZX79vNowYOg1Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmIzZGZiMjFmOTljYzI3MzhlOGIxZmQiLCJpYXQiOjE2NTYzOTczMzF9.hNCB4h1InCn88x3pFWweVCRsUtEmkVRMIAlR7WgAa1o
 
 {
-    "title": "ReactJS",
-    "description": "ReactJS",
-    "url": "ReactJS.org",
-    "status": "Learning"
+    "title": "Lite",
+    "description": "Lite",
+    "url": "Lite.org",
+    "status": "To Learn"
 }
 
 ###
 GET http://localhost:5000/api/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmIzZGZiMjFmOTljYzI3MzhlOGIxZmQiLCJpYXQiOjE2NTU5NTUzNzh9.3KNswnrtiWDRX4x8-IJ2v2cgqIYTJ3ZX79vNowYOg1Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmIzZGZiMjFmOTljYzI3MzhlOGIxZmQiLCJpYXQiOjE2NTYzOTczMzF9.hNCB4h1InCn88x3pFWweVCRsUtEmkVRMIAlR7WgAa1o
 
 ###
 PUT http://localhost:5000/api/posts/62b3dfc51f99cc2738e8b201
