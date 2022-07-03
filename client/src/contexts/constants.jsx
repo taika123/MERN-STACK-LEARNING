@@ -1,9 +1,12 @@
 export const apiUrl =
-  process.env.NODE_ENV !== "production"
-    ? "http://localhost:5000/api"
-    : "https://floating-escarpment-04172.herokuapp.com/api";
+  process.env.NODE_ENV === "production"
+    ? // ? "http://localhost:5000/api"
+      // : "somedeployedURL";
+      "http://localhost:5000/api"
+    : "https://murmuring-ravine-82073.herokuapp.com/api";
 
 export const LOCAL_STORAGE_TOKEN_NAME = "mern-learn";
+
 export const POST_LOADED_SUCCESS = "POST_LOADED_SUCCESS";
 export const POST_LOADED_FAILURE = "POST_LOADED_FAILURE";
 export const ADD_POST = "ADD_POST";

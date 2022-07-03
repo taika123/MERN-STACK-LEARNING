@@ -33,17 +33,18 @@ function Dashboard() {
   //start: get all posts
   useEffect(() => {
     getPosts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   let body = null;
 
-  if (postsLoading) {
+  if (postsLoading)
     body = (
       <div className="spinner-container">
         <Spinner animation="border" variant="info" />
       </div>
     );
-  } else if (posts.length === 0) {
+  else if (posts.length === 0) {
     body = (
       <Card className="text-center mx-5 my-5">
         <Card.Header as="h1">Hi {username}</Card.Header>

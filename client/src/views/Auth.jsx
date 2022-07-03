@@ -12,13 +12,13 @@ function Auth({ authRoute }) {
 
   let body;
 
-  if (authLoading) {
+  if (authLoading)
     body = (
       <div className="d-flex justify-content-center mt-2">
         <Spinner animation="border" variant="info"></Spinner>
       </div>
     );
-  } else if (isAuthenticated) return <Redirect to="/dashboard" />;
+  else if (isAuthenticated) return <Redirect to="/dashboard" />;
   else
     body = (
       <>
