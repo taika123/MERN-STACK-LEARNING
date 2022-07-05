@@ -1,9 +1,9 @@
 export const apiUrl =
-  process.env.NODE_ENV !== "production"
-    ? "http://localhost:5000/api"
+  process.env.NODE_ENV === "production"
+    ? "https://secret-badlands-92990.herokuapp.com/api"
     : // : "https://fathomless-temple-42878.herokuapp.com/api";
       //   "someURL"
-      "https://fathomless-temple-42878.herokuapp.com/api";
+      "https://secret-badlands-92990.herokuapp.com/api";
 
 export const LOCAL_STORAGE_TOKEN_NAME = "mern-learn";
 
