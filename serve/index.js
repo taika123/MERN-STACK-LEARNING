@@ -7,18 +7,13 @@ const cors = require('cors')
 const authRouter = require('./routes/auth')
 const postRouter = require('./routes/post')
 
-// const corsOptions = {
-//     origin: 'http://localhost:5000',
-//     credentials: true,            //access-control-allow-credentials:true
-//     optionSuccessStatus: 200
-// }
-
 const connectDB = async () => {
     try {
         await mongoose.connect(
             `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.b03jtof.mongodb.net/mern-learnit?retryWrites=true&w=majority`)
 
         console.log("MongoDB connected")
+
     } catch (error) {
         console.log(error)
         precess.exit(1)
@@ -36,8 +31,6 @@ app.use(cors());
 app.use('/api/auth', authRouter)
 app.use('/api/posts', postRouter)
 // app.get('/', (req,res) => res.send('hello world'))
-
-
 
 const PORT = process.env.PORT || 5000
 

@@ -1,6 +1,6 @@
 export const apiUrl =
   process.env.NODE_ENV === "production"
-    ? "https://secret-badlands-92990.herokuapp.com/api"
+    ? "http://localhost:5000/api"
     : // : "https://fathomless-temple-42878.herokuapp.com/api";
       //   "someURL"
       "https://secret-badlands-92990.herokuapp.com/api";

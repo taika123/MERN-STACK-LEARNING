@@ -4,9 +4,11 @@ const router = express.Router()
 const jwt = require('jsonwebtoken')
 const verifyToken = require('../middleware/auth')
 const User = require('../models/User')
+
 //@route GET api/auth
 //@desc check if User is loggin in
 //@access Public
+
 router.get('/', verifyToken, async (req, res) => {
     try {
         const user = await User.findById(req.userId).select('-password');
