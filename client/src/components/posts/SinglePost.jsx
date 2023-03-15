@@ -9,6 +9,7 @@ function SinglePost({ post: { _id, status, title, description, url } }) {
   return (
     <Card
       className="shadow"
+      style={{ display: "flex" }}
       border={
         status === "Learned"
           ? "success"
